@@ -111,7 +111,7 @@ selectNodeVersion
 
 # 3. Install yarn from npm
 echo Installing Yarnd
-$NPM_CMD install yarn -g --silent
+$NPM_CMD install yarn -g
 exitWithMessageOnError "npm failed to install yarn"
 
 YARN_CMD=$APPDATA/npm/node_modules/yarn/bin/yarn
