@@ -3,7 +3,7 @@
     "scriptFile": "retrieve-article-data.js",
     "bindings": [
         {
-            "name": "retrieve-article-data",
+            "name": "req",
             "type": "httpTrigger",
             "direction": "in",
             "route": "article/data",
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "name": "http-response",
+            "name": "res",
             "type": "http",
             "direction": "out"
         }
