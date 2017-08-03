@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`retrieve-article-data tests should return the correct successful response 1`] = `
+Object {
+  "hello": "world!",
+}
+`;

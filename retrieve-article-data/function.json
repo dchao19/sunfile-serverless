@@ -1,0 +1,21 @@
+{
+    "disabled": false,
+    "scriptFile": "retrieve-article-data.js",
+    "bindings": [
+        {
+            "name": "respond to /api/article/data",
+            "type": "httpTrigger",
+            "direction": "in",
+            "route": "article/data",
+            "authLevel": "anonymous",
+            "methods": [
+                "post"
+            ]
+        },
+        {
+            "name": "create http response",
+            "type": "http",
+            "direction": "out"
+        }
+    ]
+}

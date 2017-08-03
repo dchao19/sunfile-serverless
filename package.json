@@ -1,0 +1,28 @@
+{
+  "name": "sunfile-serverless",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "@types/jest": "^20.0.5",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.spec\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
+}
