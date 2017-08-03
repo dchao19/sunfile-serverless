@@ -10,7 +10,7 @@
 
 exitWithMessageOnError () {
   if [ ! $? -eq 0 ]; then
-    echo "An error has occurred during web site deployment."
+    echo "An error has occurred during function deployment."
     echo $1
     exit 1
   fi
@@ -111,7 +111,7 @@ selectNodeVersion
 
 # 3. Install yarn from npm
 echo Installing Yarnd
-npm install yarn -g --silent
+$NPM_CMD install yarn -g --silent
 exitWithMessageOnError "npm failed to install yarn"
 
 YARN_CMD=$APPDATA/npm/node_modules/yarn/bin/yarn
