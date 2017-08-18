@@ -12,6 +12,7 @@ export default async function run(context: IHttpContext) {
             }
         };
     } catch (e) {
+        context.log.error(e);
         context.res = {
             success: false,
             message: "failed",
