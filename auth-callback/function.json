@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "scriptFile": "auth-callback.js",
+    "bindings": [
+        {
+            "name": "req",
+            "type": "httpTrigger",
+            "direction": "in",
+            "route": "auth/callback",
+            "authLevel": "anonymous",
+            "methods": ["get"]
+        },
+        {
+            "name": "res",
+            "type": "http",
+            "direction": "out"
+        }
+    ]
+}

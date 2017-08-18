@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "scriptFile": "test-database.js",
+    "bindings": [
+        {
+            "name": "req",
+            "type": "httpTrigger",
+            "direction": "in",
+            "route": "database",
+            "authLevel": "anonymous",
+            "methods": ["get"]
+        },
+        {
+            "name": "res",
+            "type": "http",
+            "direction": "out"
+        }
+    ]
+}

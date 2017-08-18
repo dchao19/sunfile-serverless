@@ -1,28 +1,38 @@
 {
-  "name": "sunfile-serverless",
-  "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "test": "jest",
-    "compile": "tsc"
-  },
-  "dependencies": {
-    "@types/jest": "^20.0.5",
-    "jest": "^20.0.4",
-    "ts-jest": "^20.0.7",
-    "typescript": "^2.4.2"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    "name": "sunfile-serverless",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "test": "jest",
+        "compile": "tsc"
     },
-    "testRegex": "/__tests__/.*\\.spec\\.(ts|tsx)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
-    ]
-  }
+    "dependencies": {
+        "@types/jest": "^20.0.6",
+        "@types/jquery": "^3.2.11",
+        "@types/jsdom": "^11.0.1",
+        "@types/jsonwebtoken": "^7.2.3",
+        "@types/node": "^8.0.24",
+        "article-parser": "^2.0.5",
+        "axios": "^0.16.2",
+        "jest": "^20.0.4",
+        "jquery": "^3.2.1",
+        "jsdom": "^11.1.0",
+        "jsonwebtoken": "^7.4.2",
+        "jwks-rsa": "^1.2.0",
+        "mssql": "3.3.0",
+        "reflect-metadata": "^0.1.10",
+        "sqlite3": "^3.1.9",
+        "ts-jest": "^20.0.7",
+        "typeorm": "0.0.11",
+        "typescript": "^2.4.2",
+        "unfluff": "^1.1.0"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "/__tests__/.*\\.spec\\.(ts|tsx)$",
+        "moduleFileExtensions": ["ts", "tsx", "js", "json", "jsx"],
+        "testEnvironment": "node"
+    }
 }

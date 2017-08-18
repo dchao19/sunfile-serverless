@@ -2,6 +2,8 @@
 
 exports[`retrieve-article-data tests should return the correct successful response 1`] = `
 Object {
-  "hello": "world!",
+  "errorCode": 500,
+  "errorMessage": "An internal server error ocurred while parsing the article",
+  "success": false,
 }
 `;

@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "scriptFile": "test-authentication.js",
+    "bindings": [
+        {
+            "name": "req",
+            "type": "httpTrigger",
+            "direction": "in",
+            "route": "auth",
+            "authLevel": "anonymous",
+            "methods": ["post"]
+        },
+        {
+            "name": "res",
+            "type": "http",
+            "direction": "out"
+        }
+    ]
+}
