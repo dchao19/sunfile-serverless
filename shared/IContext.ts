@@ -11,17 +11,19 @@ export type HttpMethod =
     | "CONNECT"
     | "PATCH";
 
+export interface IContextLogger {
+    (message: string): void;
+    error: (message: any) => void;
+    warn: (message: any) => void;
+    info: (message: any) => void;
+    verbose: (message: any) => void;
+}
+
 export interface IContext {
-    invocationId: string;
-    bindingData: any;
-    bindings: any;
-    log: {
-        (message: string): void;
-        error: (message: any) => void;
-        warn: (message: any) => void;
-        info: (message: any) => void;
-        verbose: (message: any) => void;
-    };
+    invocationId?: string;
+    bindingData?: any;
+    bindings?: any;
+    log: IContextLogger;
     done: () => void;
 }
 

@@ -62,6 +62,7 @@ export async function run(context: IHttpContext) {
             }
         };
     } catch (error) {
+        context.log.error(error);
         context.res = {
             success: false,
             errorMessage: "An internal server error ocurred while parsing the article",
